@@ -86,4 +86,8 @@
     color: black;
     padding: 10px 20px;
     cursor: pointer;
+    font-family: Inter;
+    font-size: medium;
+    font-weight: 500;
+    border-radius: 20px;
 }

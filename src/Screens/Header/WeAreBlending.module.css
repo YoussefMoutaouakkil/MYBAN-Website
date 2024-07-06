@@ -16,5 +16,16 @@
     display: inline-block;
     font-size: 96px;
     font-family: Italianno;
+    margin-bottom: 36px;
 }
+.futureTrends {
+    font-size: 96px;
+    line-height: 52.8px;
+    font-family: Italianno;
+    color: #f3f3f3;
+    text-align: center;
+    display: block;
+    margin-bottom: 32px;
+}
+
 
