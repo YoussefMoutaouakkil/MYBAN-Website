@@ -1,0 +1,20 @@
+.i {
+    font-weight: 300;
+    font-family: Inter;
+}
+.areBlendingPast {
+    font-size: 46.7px;
+    font-weight: 300;
+    font-family: Inter;
+}
+.weAreBlendingContainer {
+    width: 753px;
+    position: relative;
+    line-height: 52.8px;
+    color: #909090;
+    text-align: left;
+    display: inline-block;
+    font-size: 96px;
+    font-family: Italianno;
+}
+
