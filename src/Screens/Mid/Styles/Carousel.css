@@ -1,0 +1,31 @@
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.ArrowBackground {
+  width: 58px;
+  height: 58px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Arrow{
+  width: 24px;
+  height: 24px;
+  margin: 0 auto;
+  text-align: center;
+}
+.RightArrow{
+    transform: scaleX(-1);
+}
+.Text p{
+    text-align: center;
+    color: #8987A1;
+}
+.Text h2{
+    margin-bottom: 0;  
+    text-align: center;
+}
