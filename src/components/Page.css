@@ -1,0 +1,108 @@
+.frame-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-3xs);
+  background: linear-gradient(121.9deg, #1c1c1c, #050505);
+  border: 1px solid var(--color-gray-200);
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: linear-dodge;
+}
+.frame-item {
+  position: absolute;
+  top: 34px;
+  left: calc(50% - 366px);
+  border-radius: var(--br-8xs);
+  width: 732px;
+  height: 551px;
+  object-fit: cover;
+  z-index: 1;
+}
+.rectangle-parent {
+  height: 618px;
+  width: 800px;
+  position: relative;
+  flex-shrink: 0;
+  max-width: 100%;
+}
+.frame-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-3xs);
+  background: linear-gradient(121.9deg, #1c1c1c, #050505);
+  border: 1px solid var(--color-gray-200);
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: linear-dodge;
+}
+.rectangle-icon {
+  position: absolute;
+  top: 34px;
+  left: calc(50% - 366px);
+  border-radius: var(--br-8xs);
+  width: 732px;
+  height: 551px;
+  object-fit: cover;
+  z-index: 1;
+}
+.rectangle-group {
+  height: 618px;
+  width: 800px;
+  position: relative;
+  flex-shrink: 0;
+  max-width: 100%;
+}
+.rectangle-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-3xs);
+  background: linear-gradient(121.9deg, #1c1c1c, #050505);
+  border: 1px solid var(--color-gray-200);
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: linear-dodge;
+}
+.frame-child1 {
+  position: absolute;
+  top: 34px;
+  left: calc(50% - 366px);
+  border-radius: var(--br-8xs);
+  width: 732px;
+  height: 551px;
+  object-fit: cover;
+  z-index: 1;
+}
+.rectangle-container {
+  height: 618px;
+  width: 800px;
+  position: relative;
+  flex-shrink: 0;
+  max-width: 100%;
+}
+.testimonial-cards {
+  margin-right: -503px;
+  width: 100vw;
+  overflow-x: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-13xl);
+  max-width: 332%;
+  flex-shrink: 0;
+  cursor: pointer;
+  /* overflow-x:auto ; */
+  /* overflow-x: hidden; */
+  /* width: 100%; */
+}
+@media screen and (max-width: 750px) {
+  .testimonial-cards {
+    gap: var(--gap-base);
+  }
+}

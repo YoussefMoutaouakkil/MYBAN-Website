@@ -1,15 +1,53 @@
-import React from 'react'
-import MainHeader from './Screens/Header/MainHeader'
-import MainMid from './Screens/Mid/MainMid'
-import MainFooter from './Screens/Footer/MainFooter'
+import { useEffect } from "react";
+import {
+  Routes,
+  Route,
+  useNavigationType,
+  useLocation,
+} from "react-router-dom";
+import Body from "./pages/Body";
+import Lhoooooooooob from "./pages/Lhoooooooooob";
 
+function App() {
+  const action = useNavigationType();
+  const location = useLocation();
+  const pathname = location.pathname;
 
-export default function App() {
+  useEffect(() => {
+    if (action !== "POP") {
+      window.scrollTo(0, 0);
+    }
+  }, [action, pathname]);
+
+  useEffect(() => {
+    let title = "";
+    let metaDescription = "";
+
+    switch (pathname) {
+      case "/":
+        title = "";
+        metaDescription = "";
+        break;
+    }
+
+    if (title) {
+      document.title = title;
+    }
+
+    if (metaDescription) {
+      const metaDescriptionTag = document.querySelector(
+        'head > meta[name="description"]'
+      );
+      if (metaDescriptionTag) {
+        metaDescriptionTag.content = metaDescription;
+      }
+    }
+  }, [pathname]);
+
   return (
-    <div style={{backgroundColor:'black',color:"white",fontFamily:"Inter"}}>
-      <MainHeader/>
-      <MainMid/>
-      <MainFooter/>
-    </div>
-  )
+    <Routes>
+      <Route path="/" element={<Lhoooooooooob />} />
+    </Routes>
+  );
 }
+export default App;
